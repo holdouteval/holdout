@@ -4,12 +4,23 @@ import json
 import os
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "out/PoolManager.fixture.sol/PoolManager.json"
 COMPILER_VERSION = "0.8.26"
+
+
+def installed_solc():
+    """Foundry keeps compilers in ~/.svm when that exists, otherwise in the XDG data directory."""
+    data = Path(os.environ.get("XDG_DATA_HOME") or Path.home() / ".local/share")
+    for directory in (Path.home() / ".svm", data / "svm"):
+        path = directory / COMPILER_VERSION / ("solc-" + COMPILER_VERSION)
+        if path.exists():
+            return path
+    return None
 
 
 def main():
@@ -39,16 +50,19 @@ def main():
     fingerprint = hashlib.sha256(json.dumps(request, sort_keys=True).encode()).hexdigest()
     if OUT.exists() and json.loads(OUT.read_text()).get("fixtureInputHash") == fingerprint:
         return
-    compiler = Path.home() / ".local/share/svm" / COMPILER_VERSION / ("solc-" + COMPILER_VERSION)
-    if not compiler.exists():
+    compiler = installed_solc()
+    if compiler is None:
         # Ask Foundry to install the exact compiler using an isolated empty project.
+        forge = shutil.which("forge") or str(Path.home() / ".foundry/bin/forge")
         with tempfile.TemporaryDirectory(prefix="pool-compiler-") as directory:
             p = Path(directory)
             (p / "src").mkdir()
             (p / "foundry.toml").write_text('[profile.default]\nsolc_version="0.8.26"\n')
             (p / "src/Version.sol").write_text('pragma solidity 0.8.26; contract Version {}')
-            subprocess.run([str(Path.home()/'.foundry/bin/forge'), "build", "--root", directory], check=True,
-                           stdout=subprocess.DEVNULL)
+            subprocess.run([forge, "build", "--root", directory], check=True, stdout=subprocess.DEVNULL)
+        compiler = installed_solc()
+        if compiler is None:
+            raise SystemExit("solc " + COMPILER_VERSION + " is not installed after forge build")
     result = subprocess.run([str(compiler), "--standard-json"], input=json.dumps(request), capture_output=True, text=True, check=True)
     response = json.loads(result.stdout)
     errors = [e for e in response.get("errors", []) if e["severity"] == "error"]
