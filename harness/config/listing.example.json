@@ -1,0 +1,387 @@
+{
+  "principal": "1000000000",
+  "maxAge": 90000,
+  "actWindow": 1800,
+  "assets": [
+    {
+      "assetId": 0,
+      "symbol": "NBIS",
+      "token": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+      "feed": "0xe1d87b116ba0fe898998f1d140339d1fa1e09705",
+      "pools": [
+        {
+          "index": 0,
+          "token": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+          "poolId": "0x7c2f9ce1214ba9baf56d1b6a1fc640c1b63e9a711172c0c7d10e5a9c4a3d4f0c",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0x9d9c6684f596f66a64c030b93a886d51fd4d7931",
+            "fee": 9900,
+            "tickSpacing": 99,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 1,
+      "symbol": "SNDK",
+      "token": "0xb90a19ff0af67f7779aff50a882a9cff42446400",
+      "feed": "0xfb133fa4b7b385802b693a293606682df47109a3",
+      "pools": [
+        {
+          "index": 1,
+          "token": "0xb90a19ff0af67f7779aff50a882a9cff42446400",
+          "poolId": "0x2707cb88a6a40fa0f948f58958051ba097d6f6a3cf7f87929bd68ccc5becea24",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xb90a19ff0af67f7779aff50a882a9cff42446400",
+            "fee": 10000,
+            "tickSpacing": 200,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 2,
+      "symbol": "MSTR",
+      "token": "0xec262a75e413fafd0df80480274532c79d42da09",
+      "feed": "0x396118bdfb181e6240e74d243f266b061c0edc3d",
+      "pools": [
+        {
+          "index": 2,
+          "token": "0xec262a75e413fafd0df80480274532c79d42da09",
+          "poolId": "0x319bac87e616a89e241c10aeb8afd4892a852cdd8b373cd9765ecddc40b87cfe",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xec262a75e413fafd0df80480274532c79d42da09",
+            "fee": 2500,
+            "tickSpacing": 25,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 3,
+      "symbol": "AMD",
+      "token": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+      "feed": "0x943a29e7ae51a4798823ca9eed2ed533b2a22c72",
+      "pools": [
+        {
+          "index": 3,
+          "token": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+          "poolId": "0xde9f85fdd9e05a943a52f2c69ffafe3064a3287df03d02c9b431bc92d4781274",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+            "fee": 10000,
+            "tickSpacing": 200,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 4,
+      "symbol": "MU",
+      "token": "0xff080c8ce2e5feadaca0da81314ae59d232d4afd",
+      "feed": "0x425eefdcf05ed6526c3ce61af99429a228a6d596",
+      "pools": [
+        {
+          "index": 4,
+          "token": "0xff080c8ce2e5feadaca0da81314ae59d232d4afd",
+          "poolId": "0x9eb78b6b9512b42d20cc11a93385da7145c7c1c5269e7434cfc2fdb4d4ba3f38",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xff080c8ce2e5feadaca0da81314ae59d232d4afd",
+            "fee": 800,
+            "tickSpacing": 8,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 5,
+      "symbol": "CRCL",
+      "token": "0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5",
+      "feed": "0x6652edf64ba3731c4f2d3ce821a0fb1f1f6b482a",
+      "pools": [
+        {
+          "index": 5,
+          "token": "0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5",
+          "poolId": "0xdb9c34002d173981250969293af6f43f42a26f2110f19893bbe2ad373375e9e6",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5",
+            "fee": 8388608,
+            "tickSpacing": 60,
+            "hooks": "0x5eb87f69be00df39981622fd60a8de4b7837e080"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 6,
+      "symbol": "COIN",
+      "token": "0x6330d8c3178a418788df01a47479c0ce7ccf450b",
+      "feed": "0xa3a468a452940b7d6b69991207b508c609a98ef2",
+      "pools": [
+        {
+          "index": 6,
+          "token": "0x6330d8c3178a418788df01a47479c0ce7ccf450b",
+          "poolId": "0x8138ea2894ce8f825d830569df6faf33e55344290954ce22432ca4f11913bacc",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0x6330d8c3178a418788df01a47479c0ce7ccf450b",
+            "fee": 8388608,
+            "tickSpacing": 60,
+            "hooks": "0x5eb87f69be00df39981622fd60a8de4b7837e080"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 7,
+      "symbol": "SPCX",
+      "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+      "feed": "0xb265810950ba6c5c0ff821c9963014a56fd8bffb",
+      "pools": [
+        {
+          "index": 7,
+          "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+          "poolId": "0xb81d873dfb2bb1aaf08804053f8940fd06bb30a2b5a0fafcdbcc7325544452b9",
+          "key": {
+            "currency0": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+            "currency1": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "fee": 8388608,
+            "tickSpacing": 10,
+            "hooks": "0x5eb87f69be00df39981622fd60a8de4b7837e080"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 8,
+      "symbol": "PLTR",
+      "token": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a",
+      "feed": "0x820abedff239034956b7a9d2f0a331f9f075eb4c",
+      "pools": [
+        {
+          "index": 8,
+          "token": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a",
+          "poolId": "0xee430ee1003e1985e1828a01b9a20dad67ad4302994fe2abb4a173de4ac54623",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a",
+            "fee": 10000,
+            "tickSpacing": 200,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 9,
+      "symbol": "NVDA",
+      "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+      "feed": "0x379ec4f7c378f34a1b47e4f3cbebcbac3e8e9f15",
+      "pools": [
+        {
+          "index": 9,
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "poolId": "0x7990aad9e8fb048f49a155a7df5603db0366f0657035b78eb4196395cccb3dcd",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+            "fee": 8388608,
+            "tickSpacing": 10,
+            "hooks": "0x66622f77b797d506e5376f7798b67ab288966080"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 10,
+      "symbol": "TSLA",
+      "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+      "feed": "0x4a1166a659a55625345e9515b32adecea5547c38",
+      "pools": [
+        {
+          "index": 10,
+          "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+          "poolId": "0xd5effce87036cd858146c0c15fa825c231a9de1843200ca108e431e431331e8e",
+          "key": {
+            "currency0": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+            "currency1": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "fee": 8388608,
+            "tickSpacing": 10,
+            "hooks": "0x67d86050d22d574df046f3d90f722045f714e080"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 11,
+      "symbol": "TSM",
+      "token": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+      "feed": "0x874cf94aa8ec88fd9560094dd065f2fb3e41fc2f",
+      "pools": [
+        {
+          "index": 11,
+          "token": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+          "poolId": "0x0ba5d53d2f6255f334b7c8ead4f56b6aef5af3402c5e4d11180afd38c6b85fb1",
+          "key": {
+            "currency0": "0x58ffe4a942d3885baa22d7520691f611ef09e7aa",
+            "currency1": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "fee": 7500,
+            "tickSpacing": 75,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 12,
+      "symbol": "USO",
+      "token": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+      "feed": "0x75a9c76ef439e2c7c2e5a34ab105ecfe3766431c",
+      "pools": [
+        {
+          "index": 12,
+          "token": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+          "poolId": "0x1f2ad5a274a776d8e1408292bde1d92d8fa7b6444acf14ad60b9c3e4e5b66420",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+            "fee": 1200,
+            "tickSpacing": 15,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 13,
+      "symbol": "META",
+      "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+      "feed": "0x7c38c00c30bee9378381e7b6135d7283356d71b1",
+      "pools": [
+        {
+          "index": 13,
+          "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+          "poolId": "0x5875d407a42965b0e768c8925cea290e06fa50603ef34fc99eb92a1050e6ae36",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+            "fee": 3000,
+            "tickSpacing": 60,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 14,
+      "symbol": "AMZN",
+      "token": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+      "feed": "0xd5a1508ced74c084ebf3cbe853e2c968fb2a651c",
+      "pools": [
+        {
+          "index": 14,
+          "token": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+          "poolId": "0xefc94885c96b02696b9b45de43eeeb8ac53c0199cab42b4daae4911b96fb8825",
+          "key": {
+            "currency0": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+            "currency1": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "fee": 2400,
+            "tickSpacing": 24,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 15,
+      "symbol": "GOOGL",
+      "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+      "feed": "0xf6f373a037c30f0e5010d854385ca89185ae638b",
+      "pools": [
+        {
+          "index": 15,
+          "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+          "poolId": "0xd4ecb79fdc521d7725d22b33ed43cb4e47aa96bfad76aa29577e3151f723ac5e",
+          "key": {
+            "currency0": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+            "currency1": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "fee": 3000,
+            "tickSpacing": 60,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 16,
+      "symbol": "MSFT",
+      "token": "0xe93237c50d904957cf27e7b1133b510c669c2e74",
+      "feed": "0x45c3c877c15e6ba2ebb19ea114ea508d14c1af2e",
+      "pools": [
+        {
+          "index": 16,
+          "token": "0xe93237c50d904957cf27e7b1133b510c669c2e74",
+          "poolId": "0x9194a557b6a6bb2236b49ea7e2bbccec5d3eeb705aef00903be4b3de1d949579",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xe93237c50d904957cf27e7b1133b510c669c2e74",
+            "fee": 3000,
+            "tickSpacing": 60,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 17,
+      "symbol": "AAPL",
+      "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+      "feed": "0x6b22a786baa607d76728168703a39ea9c99f2cd0",
+      "pools": [
+        {
+          "index": 17,
+          "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+          "poolId": "0xa2347ba69167e5602f74640ffbf737ee7cdd825e4726d3462564fc6533070147",
+          "key": {
+            "currency0": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "currency1": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+            "fee": 8388608,
+            "tickSpacing": 10,
+            "hooks": "0x70a9a88402989226847ec122043ce5e7ff462080"
+          }
+        }
+      ]
+    },
+    {
+      "assetId": 18,
+      "symbol": "SPY",
+      "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+      "feed": "0x319724394d3a0e3669269846abe664cd621f9f6a",
+      "pools": [
+        {
+          "index": 18,
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "poolId": "0xe1ae6a4c6ccc9f037389a8d50a4f577bde1a9fe01d85d88ecbbd39955ce53288",
+          "key": {
+            "currency0": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+            "currency1": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+            "fee": 100,
+            "tickSpacing": 1,
+            "hooks": "0x0000000000000000000000000000000000000000"
+          }
+        }
+      ]
+    }
+  ]
+}

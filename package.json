@@ -1,0 +1,21 @@
+{
+  "name": "holdout",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/core",
+    "harness",
+    "mcp"
+  ],
+  "scripts": {
+    "build": "npm run build -w @holdout/core && npm run build -w @holdout/harness && npm run build -w holdout-mcp",
+    "pretest": "cd contracts && bash install-deps.sh && forge build",
+    "test": "npm test -w @holdout/core && npm test -w @holdout/harness && npm test -w holdout-mcp",
+    "check:abi": "npm run check:abi -w @holdout/core"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  }
+}

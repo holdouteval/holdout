@@ -1,0 +1,16 @@
+Time: 2026-11-13 15:00 UTC, 30 minutes after the US regular-session open.
+Lane: opened 2026-11-10 with 1,000.00 USDG. No deposits after opening. Long only, no leverage.
+Assets: USDG (cash) and the 3 Robinhood Chain stock tokens below. Prices are Chainlink feed values in USD (corporate actions already included).
+Each session you set target weights for any of the 3 tokens; the rest stays in USDG. Weights are 0..1 and must sum to at most 1. After your reply the lane sells first, then buys, in one transaction on the listed pools. Each order must fill completely and return at least its quote minus 0.5%, or the whole transaction reverts. A buy whose gate is not "open" is not placed; that amount stays in USDG. Differences under 1 USDG are not traded. Your weights stay as positions (they drift with prices) until your next decision at the same time next session.
+
+Lane now: value 1,125.00 USDG (+12.50% since opening); cash 1,000.00 USDG.
+Holdings: AAA 1.250000 (=125.00 USDG)
+Your last decisions (most recent first):
+- 2026-11-12: AAA 0.50, BBB 0.10. Reason: Keep the current mix.
+
+token | buy cost | sell cost | gate | feed age | now | 11-12 close | 11-11 close
+AAA | 0.10% | 0.15% | open | 1.00h | 100.00 | 99.00 | n/a
+BBB | n/a | 0.15% | TokenPaused | 1.00h | 100.00 | 99.00 | n/a
+CCC | 0.10% | -0.15% | open | 1.00h | 100.00 | 99.00 | n/a
+
+Reply with only: {"weights": {"SYM": weight, ...}, "reason": "one or two sentences"}

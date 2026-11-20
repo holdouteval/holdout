@@ -1,0 +1,4 @@
+forge-std foundry-rs/forge-std 15b2df92a05d4d2f76a06653872fefb287e0e01c
+solady Vectorized/solady 258f67cc71e39cff307b726939ade17e9d8bcf5c
+v4-core Uniswap/v4-core bea7f6d1c11cd5dc4f0d5151ffa37a1c239feee6
+solmate transmissions11/solmate 4b47a19038b798b4a33d9749d25e570443520647

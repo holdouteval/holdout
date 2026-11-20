@@ -1,0 +1,7 @@
+[
+  {"model": "claude-fable-5-2", "date": "2026-06-30", "label": "2026-06", "note": "month only; reliable knowledge and training data cutoff", "source": "https://platform.claude.com/docs/en/models/fable-5-2/overview"},
+  {"model": "claude-opus-5-5", "date": "2026-06-30", "label": "2026-06", "note": "month only; reliable knowledge and training data cutoff", "source": "https://platform.claude.com/docs/en/models/opus-5-5/overview"},
+  {"model": "claude-haiku-5-5", "date": "2026-06-30", "label": "2026-06", "note": "month only; reliable knowledge and training data cutoff", "source": "https://platform.claude.com/docs/en/models/haiku-5-5/overview"},
+  {"model": "gpt-6-astra", "date": "2026-04-30", "label": "2026-04-30", "note": "knowledge cutoff; no separate training data cutoff published", "source": "https://developers.openai.com/api/docs/models/gpt-6-astra"},
+  {"model": "gpt-6.1-sol", "date": "2026-04-30", "label": "2026-04-30", "note": "knowledge cutoff; no separate training data cutoff published", "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"}
+]

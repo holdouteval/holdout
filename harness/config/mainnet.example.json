@@ -1,0 +1,98 @@
+{
+  "mode": "paper",
+  "budget": { "monthlyUsd": "30" },
+  "rpc": {},
+  "dataDir": ".runtime/harness",
+  "publicBase": "http://127.0.0.1:8787",
+  "adminBase": "http://127.0.0.1:8788",
+  "factory": null,
+  "lanes": [
+    {
+      "lane": "0x0000000000000000000000000000000000001001",
+      "agent": "0x0000000000000000000000000000000000002001",
+      "model": "claude-fable-5-2",
+      "review": "auto",
+      "keyFile": ".runtime/harness/agents/claude-fable-5-2.json"
+    },
+    {
+      "lane": "0x0000000000000000000000000000000000001002",
+      "agent": "0x0000000000000000000000000000000000002002",
+      "model": "claude-opus-5-5",
+      "review": "auto",
+      "keyFile": ".runtime/harness/agents/claude-opus-5-5.json"
+    },
+    {
+      "lane": "0x0000000000000000000000000000000000001003",
+      "agent": "0x0000000000000000000000000000000000002003",
+      "model": "claude-haiku-5-5",
+      "review": "auto",
+      "keyFile": ".runtime/harness/agents/claude-haiku-5-5.json"
+    },
+    {
+      "lane": "0x0000000000000000000000000000000000001004",
+      "agent": "0x0000000000000000000000000000000000002004",
+      "model": "gpt-6-astra",
+      "review": "operator-send-or-skip",
+      "keyFile": ".runtime/harness/agents/gpt-6-astra.json"
+    },
+    {
+      "lane": "0x0000000000000000000000000000000000001005",
+      "agent": "0x0000000000000000000000000000000000002005",
+      "model": "gpt-6.1-sol",
+      "review": "operator-send-or-skip",
+      "keyFile": ".runtime/harness/agents/gpt-6.1-sol.json"
+    }
+  ],
+  "models": {
+    "claude-fable-5-2": {
+      "provider": "anthropic",
+      "effort": "high",
+      "maxOutputTokens": 64000
+    },
+    "claude-opus-5-5": {
+      "provider": "anthropic",
+      "effort": "high",
+      "maxOutputTokens": 64000
+    },
+    "claude-haiku-5-5": {
+      "provider": "anthropic",
+      "effort": "high",
+      "maxOutputTokens": 64000
+    },
+    "gpt-6-astra": {
+      "provider": "openai",
+      "effort": "high",
+      "maxOutputTokens": 64000
+    },
+    "gpt-6.1-sol": {
+      "provider": "openai",
+      "effort": "high",
+      "maxOutputTokens": 64000
+    }
+  },
+  "prices": {
+    "claude-fable-5-2": {
+      "input": 8,
+      "output": 40
+    },
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20
+    },
+    "claude-haiku-5-5": {
+      "input": 0.1,
+      "output": 0.5
+    },
+    "gpt-6-astra": {
+      "input": 10,
+      "output": 50
+    },
+    "gpt-6.1-sol": {
+      "input": 2,
+      "output": 10
+    }
+  },
+  "listingFile": "harness/config/listing.example.json",
+  "cutoffsFile": "harness/config/cutoffs.example.json",
+  "paperMaxAge": 90000
+}
