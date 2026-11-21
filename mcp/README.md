@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/holdouteval/holdout/9369bc40ab8910971349c4a11b592f8de42cdd1a/.github/readme/holdout-dark.svg">
-    <img src="https://raw.githubusercontent.com/holdouteval/holdout/9369bc40ab8910971349c4a11b592f8de42cdd1a/.github/readme/holdout-light.svg" alt="holdout" width="248">
-  </picture>
+  <img src="https://raw.githubusercontent.com/holdouteval/holdout/41e12d70cc4dd4341c09de6e1d52823a8e71a029/.github/readme/holdout-npm.svg" alt="holdout" width="248">
 </p>
 
 <h3 align="center">Give your agent a track record no one can call a backtest.</h3>
@@ -45,10 +42,7 @@ The server needs Node.js 22.13.0 or newer and speaks MCP over stdio. The package
 ## One decision
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/holdouteval/holdout/6a9db9fab9652d4932663be87e60eac1d3ab3c3f/.github/readme/mcp-decide-dark.svg">
-    <img src="https://raw.githubusercontent.com/holdouteval/holdout/6a9db9fab9652d4932663be87e60eac1d3ab3c3f/.github/readme/mcp-decide-light.svg" width="720" alt="FIG. 1. What one holdout_decide call does. On the left, on paper, on your machine, top to bottom: the call with weights, input and output; the orders, sells then buys, with gated buys dropped; the record, canonical JSON kept as records/&lt;h&gt;.json; and its sha256, h, which runs to the seam. A call with the same requestId is resumed and never sealed twice. At the seam, in amber, one transaction seals h: Lane.trade(h, legs), or Lane.seal(h, 0). On the right, on carbon, after the seal: the feed rounds that value the legs, drawn as ticks, all later than the seal; and, branching from the transaction, the record posted to /r/&lt;h&gt;.json after the receipt and the decision on the board beside the house models.">
-  </picture>
+  <img src="https://raw.githubusercontent.com/holdouteval/holdout/41e12d70cc4dd4341c09de6e1d52823a8e71a029/.github/readme/mcp-decide-npm.svg" width="720" alt="FIG. 1. What one holdout_decide call does. On the left, on paper, on your machine, top to bottom: the call with weights, input and output; the orders, sells then buys, with gated buys dropped; the record, canonical JSON kept as records/&lt;h&gt;.json; and its sha256, h, which runs to the seam. A call with the same requestId is resumed and never sealed twice. At the seam, in amber, one transaction seals h: Lane.trade(h, legs), or Lane.seal(h, 0). On the right, on carbon, after the seal: the feed rounds that value the legs, drawn as ticks, all later than the seal; and, branching from the transaction, the record posted to /r/&lt;h&gt;.json after the receipt and the decision on the board beside the house models.">
 </p>
 
 <sub>FIG. 1. `holdout_decide`, from `mcp/src/engine.ts` and `Lane.sol`. A diagram; the ticks stand for feed rounds.</sub>
@@ -103,10 +97,7 @@ curl -s https://data.holdout.codes/r/$h.json | sha256sum   # the same h, without
 ## Keys and who moves what
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/holdouteval/holdout/9369bc40ab8910971349c4a11b592f8de42cdd1a/.github/readme/fig2-lane-dark.svg">
-    <img src="https://raw.githubusercontent.com/holdouteval/holdout/9369bc40ab8910971349c4a11b592f8de42cdd1a/.github/readme/fig2-lane-light.svg" width="880" alt="FIG. 2. Who can move what in one lane. In the middle, the lane and the USDG and stock tokens it tracks. The owner funds it once through openLane and is the only account it pays outside swaps, through close and, after closing, rescue. Above, the agent calls seal and trade, in amber, and the lane pays it nothing. To the right, tokens move only in swaps with the Uniswap v4 PoolManager. Below, dashed reads: the feed, and the factory's asset and pool lists. The factory owner calls only the factory.">
-  </picture>
+  <img src="https://raw.githubusercontent.com/holdouteval/holdout/41e12d70cc4dd4341c09de6e1d52823a8e71a029/.github/readme/fig2-lane-npm.svg" width="880" alt="FIG. 2. Who can move what in one lane. In the middle, the lane and the USDG and stock tokens it tracks. The owner funds it once through openLane and is the only account it pays outside swaps, through close and, after closing, rescue. Above, the agent calls seal and trade, in amber, and the lane pays it nothing. To the right, tokens move only in swaps with the Uniswap v4 PoolManager. Below, dashed reads: the feed, and the factory's asset and pool lists. The factory owner calls only the factory.">
 </p>
 
 <sub>FIG. 2. From the access checks in `Lane.sol` and `LaneFactory.sol`: solid arrows move tokens, thin ones call, dashed ones read.</sub>

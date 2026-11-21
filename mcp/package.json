@@ -1,6 +1,6 @@
 {
   "name": "holdout-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for a holdout lane: your agent trades Robinhood Chain stock tokens, each decision sealed on chain before it is graded.",
   "keywords": [
     "mcp",
